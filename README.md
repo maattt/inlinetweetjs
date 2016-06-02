@@ -33,16 +33,17 @@ Wrap the tweetable text in a container element of your choice (`span` recommende
 
 You can add more data attributes to cutomise the tweeted output -
 
+- `data-inline-tweet-text` — Change the text to append to the tweet
 - `data-inline-tweet-via` — Add a twitter username (without the @) to append to the tweet
 - `data-inline-tweet-tags` - Add hashtags to the tweet (comma-separated, no spaces)
 - `data-inline-tweet-url` — Tweet a URL different to the current page url
 
 ```html
-<span data-inline-tweet       
-	  data-inline-tweet-via="ireaderinokun"   
-	  data-inline-tweet-tags="webdesign,webdev,js,yolo"    
-	  data-inline-tweet-url="bitsofco.de">   
-	Lorem Khaled Ipsum is a major key to success 
+<span data-inline-tweet
+	  data-inline-tweet-via="ireaderinokun"
+	  data-inline-tweet-tags="webdesign,webdev,js,yolo"
+	  data-inline-tweet-url="bitsofco.de">
+	Lorem Khaled Ipsum is a major key to success
 </span>
 ```
 
@@ -52,18 +53,18 @@ You can add more data attributes to cutomise the tweeted output -
 Add the following styles to your stylesheet -
 
 ```css
-[data-inline-tweet] a {   
-	text-decoration: none;   
-	color: #000; 
-} 
-[data-inline-tweet] a span {   
-	border-bottom: 1px dotted rgb(0,172,237);   
-	font-style: italic;      
-	margin-right: 10px; 
-} 
-[data-inline-tweet] a:hover span {   
-	background-color: rgba(0,172,237,0.1);   
-	color: rgb(0,172,237); 
+[data-inline-tweet] a {
+	text-decoration: none;
+	color: #000;
+}
+[data-inline-tweet] a span {
+	border-bottom: 1px dotted rgb(0,172,237);
+	font-style: italic;
+	margin-right: 10px;
+}
+[data-inline-tweet] a:hover span {
+	background-color: rgba(0,172,237,0.1);
+	color: rgb(0,172,237);
 }
 ```
 
